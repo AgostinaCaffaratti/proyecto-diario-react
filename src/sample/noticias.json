@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "imagen": "imagen",
+        "title": "Titulo ",
+        "Texto": "Texto de la noticia"
+    },
+    {
+        "id": 1,
+        "imagen": "imagen",
+        "title": "Titulo ",
+        "Texto": "Texto de la noticia"
+    },
+    {
+        "id": 2,
+        "imagen": "imagen",
+        "title": "Titulo 1",
+        "Texto": "Texto de la noticia"
+    },
+    {
+        "id": 3,
+        "imagen": "imagen",
+        "title": "Titulo 1",
+        "Texto": "Texto de la noticia"
+    }
+]
