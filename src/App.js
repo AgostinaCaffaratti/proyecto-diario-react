@@ -2,9 +2,27 @@ import React from 'react';
 
 import './App.css'; 
 
+import news from './sample/noticias.json'
+import News from './components/news'
+
+
+
 class App extends React.Component {
+
+  //defino el estado, con las noticias creadas
+
+  state = {
+    news : news
+  }
+
+
   render () {
-    return  <h1> El Diario </h1>
+    return  <div>
+      <News news = {this.state.news}/>
+    </div>
+      
+        
+        
       
     
   }
