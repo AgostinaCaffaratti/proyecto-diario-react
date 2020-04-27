@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 
+import New from './new'
+
 class News extends Component {
     render (){ 
-        return this.props.news.map( e => <p key={e.id}>
-      
-            {e.imagen} - {e.title} - {e.texto} - {e.id}
-            <button> Ir a la noticia </button>
-            </p>)
+        return this.props.news.map( e => <New new= {e} key={e.id}/>)
     }
 
 }
