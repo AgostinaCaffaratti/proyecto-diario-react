@@ -6,19 +6,19 @@ class Enlaces extends Component {
     render(){
         return <ul className = "nav-list">
         <li className="item"> 
-            <a href= "#">Las mas Leidas </a>
+            <a className="nav-enlace"  href= "#">Las mas Leidas </a>
         </li>
         <li> 
-            <a href= "#">Destacadas en imagenes</a>
+            <a className="nav-enlace"  href= "#">Destacadas en imagenes</a>
         </li>
         <li> 
-            <a href= "#">Cotizacion Dolar Hoy</a>
+            <a className="nav-enlace" href= "#">Cotizacion Dolar Hoy</a>
         </li>
         <li> 
-            <a href= "#">Las mas Leidas</a>
+            <a className="nav-enlace"  href= "#">Las mas Leidas</a>
         </li>
         <li>  
-            <a href= "#">Opinion</a>
+            <a className="nav-enlace"  href= "#">Opinion</a>
         </li>
     </ul>
     }

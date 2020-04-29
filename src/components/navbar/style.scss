@@ -1,3 +1,9 @@
+@import '../../variables/style.scss';
+
 .main-nav-bar{
     width: 100%;
+    background: $navBarBackground;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }

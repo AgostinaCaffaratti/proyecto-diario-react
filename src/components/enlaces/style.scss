@@ -1,15 +1,21 @@
+@import '../../variables/style.scss';
+
 .nav-list{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    
-    margin-top: 10px;
-    li{
-        background: rgb(194, 186, 186);
-        margin: 10px;
-        text-decoration: none;
-        color: black;
-        border-radius: 7%;
-        padding: 10px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.nav-enlace{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $primaryColorFont;
+
+    &:hover{
+        color: $enlaceHoverColorFont;
     }
+
 }
