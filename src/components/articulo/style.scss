@@ -1,10 +1,12 @@
+@import '../../variables/style.scss';
+
 .new {
-    background: rgb(184, 174, 174);
-    border: 3px solid rgb(247, 235, 235);
+    background: $articuloBackground;
+    border: 3px solid $background;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 100%;
     padding: 10px;
     border-radius: 5%;
 

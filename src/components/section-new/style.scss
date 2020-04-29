@@ -2,8 +2,23 @@
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+
+     div{
+       width: 50%;
+     }
   }
+
+  .secondary-new{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+      article{
+        width: 45%;
+      }
+  }
+
+
 
   
 
