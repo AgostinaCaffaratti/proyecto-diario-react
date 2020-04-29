@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import './style.scss'
 import Navbar from '../navbar'
+import Title from './title'
 
 
 
@@ -9,7 +10,7 @@ class Header extends Component {
 
     render(){
         return <header className = "header">
-            <h1>El Diario</h1>
+            <Title/>
             <Navbar/>
         </header>
     }

@@ -1,6 +1,10 @@
+@import '../../variables/style.scss';
+
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: $headerBackground;
 
 }
+
