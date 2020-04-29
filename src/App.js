@@ -3,30 +3,22 @@ import React from 'react';
 import './App.scss'; 
 
 import news from './sample/noticias.json'
-import News from './components/section-new'
+import SectionNews from './components/news-section'
 import Header from './components/header';
 
 
 
 class App extends React.Component {
-
-  //defino el estado, con las noticias creadas
-
+  
   state = {
     news : news
   }
 
-
-  render () {
+    render () {
     return  <div className = "body">
       <Header/>
-      <News news = {this.state.news}/>
+      <SectionNews news = {this.state.news}/>
     </div>
-      
-        
-        
-      
-    
   }
 }
 

@@ -1,6 +1,6 @@
 @import '../../../variables/style.scss';
 
-.title-container{
+.title-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,15 +8,15 @@
 
 }
 
-.logo{
+.logo {
     width: 60px;
     height: 60px;
 }
 
-.title{
+.title {
     margin-left: 10px;
     font-family: $titleFont;
     font-size: 50px;
-    
+
 
 }
