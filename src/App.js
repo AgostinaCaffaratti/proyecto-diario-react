@@ -12,42 +12,42 @@ const App = () => (
       <nav className="nav-bar">
         <ul className="nav-bar__list">
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Noticias Principales
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Noticias en imagenes
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Deporte
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Espectaculos
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Politica
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Clima
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Dolar
             </a>
           </li>
           <li className="nav-bar__list--item">
-            <a className="nav-bar__--item--link" href="https://www.google.com.ar/">
+            <a className="nav-bar__list--item--link" href="https://www.google.com.ar/">
               Opiniones
             </a>
           </li>
