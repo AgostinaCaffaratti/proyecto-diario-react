@@ -1,6 +1,6 @@
-@import './variables/style.scss';
+@import './variables.scss';
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -9,6 +9,6 @@
 	outline: none;
 }
 
-body{
+body {
 	background: $background;
 }
