@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./style.scss"
+
 const NavBar = () => (
   <nav className="nav-bar">
     <ul className="nav-bar__list">

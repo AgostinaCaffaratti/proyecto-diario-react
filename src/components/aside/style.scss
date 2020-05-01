@@ -1,0 +1,9 @@
+$asideBackground: rgb(224, 222, 224);
+
+.aside-container {
+  background: $asideBackground;
+  padding: 20px;
+  border: 1px solid #000000;
+  grid-column: 1/2;
+
+}

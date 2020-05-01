@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./style.scss"
+
 const MainArticle = () => (
   <article className="main-article">
     <img className="main-article__img" src={process.env.PUBLIC_URL + "/assets/main-new.jpg"} alt="description"></img>

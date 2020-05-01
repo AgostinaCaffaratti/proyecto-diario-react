@@ -1,6 +1,8 @@
 import React from "react"
 import SocialLinks from "./social-links"
 
+import "./style.scss"
+
 const Footer = () => (
   <footer className="footer-container">
     <SocialLinks />

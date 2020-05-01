@@ -9,6 +9,13 @@
 	outline: none;
 }
 
-body {
+.grid-container {
 	background: $background;
+	font-family: $font;
+	width: 90%;
+	margin: 10px auto;
+
+	display: grid;
+	gap: 1px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }

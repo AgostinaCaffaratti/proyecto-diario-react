@@ -1,0 +1,13 @@
+$galeryBackground: rgb(179, 178, 178);
+
+.galery-container {
+  background: $galeryBackground;
+  padding: 20px;
+  border: 1px solid #000000;
+  grid-column: span 4;
+}
+
+.galery-container__img {
+  width: 100px;
+  height: 100px;
+}

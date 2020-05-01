@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./style.scss"
+
 const OpinionArticle = () => (
   <article className="opinion-container__article">
     <img className="opinion-container__author" src={process.env.PUBLIC_URL + "assets/user.png"} alt="author"></img>

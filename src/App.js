@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./App.scss"
+import "./style.scss"
 import Header from "./components/header"
 import Aside from "./components/aside"
 import MainSection from "./components/main-section"
@@ -9,7 +9,7 @@ import Topics from "./components/topics"
 import Footer from "./components/footer"
 
 const App = () => (
-  <body>
+  <body className="grid-container">
     <Header />
     <Aside />
     <MainSection />

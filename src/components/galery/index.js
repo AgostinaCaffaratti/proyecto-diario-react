@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./style.scss"
+
 const Galery = () => (
   <section className="galery-container">
     <img className="galery-container__img" src={process.env.PUBLIC_URL + "/assets/elmundo1.jpg"} alt="TorreEifell"></img>

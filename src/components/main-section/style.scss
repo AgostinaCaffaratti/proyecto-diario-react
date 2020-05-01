@@ -1,0 +1,11 @@
+$mainSectionBackground: rgb(206, 200, 200);
+
+.main-section {
+  background: $mainSectionBackground;
+  padding: 20px;
+  border: 1px solid #000000;
+  grid-column: 2/5;
+
+
+
+}
