@@ -11,8 +11,8 @@ import Footer from "./components/footer"
 const App = () => (
   <body className="grid-container">
     <Header />
-    <Aside />
     <MainSection />
+    <Aside />
     <Galery />
     <Topics />
     <Footer />

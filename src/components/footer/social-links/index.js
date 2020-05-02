@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./style.scss"
+
 const SocialLinks = () => (
   <section className="container-links">
     <a className="container-links--twitter" href="https://twitter.com/">

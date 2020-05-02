@@ -7,8 +7,11 @@ import "./style.scss"
 
 const Header = () => (
   <header className="header-container">
-    <Brand />
+    <div className="header-container--i-visible">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
     <NavBar />
+    <Brand />
   </header>
 )
 

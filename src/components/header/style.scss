@@ -2,8 +2,32 @@ $headerBackground: rgb(236, 236, 236);
 
 .header-container {
   background: $headerBackground;
-  padding: 20px;
-  border: 1px solid #000000;
+  padding: 5px;
+  border: 1px solid $headerBackground;
+  border-radius: 2.5%;
   grid-column: 1/5;
+  grid-row: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+
+.header-container--i-visible {
+  display: block;
+}
+
+@media (min-width: 1281px) {
+
+  .header-container {
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .header-container--i-visible {
+    display: none;
+  }
+
 
 }
