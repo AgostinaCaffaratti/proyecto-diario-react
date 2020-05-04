@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./style.scss"
+
 const Dolar = () => (
   <section className="dolar-container">
     <h2 className="dolar-container__title">Dolar Bolsa</h2>

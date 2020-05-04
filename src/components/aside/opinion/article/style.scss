@@ -1,4 +1,24 @@
-.opinion-container__author {
-  width: 100px;
-  height: 100px;
+.opinion-article {
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+
+
+  &__author {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__name {
+    width: 50%;
+
+  }
+
+  &__content {
+    width: 50%;
+  }
 }

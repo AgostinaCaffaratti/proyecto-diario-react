@@ -2,7 +2,7 @@ $mainSectionBackground: rgb(206, 200, 200);
 
 .main-section {
   background: $mainSectionBackground;
-  padding: 20px;
+  padding: 10px;
   border-radius: 2%;
   grid-column: span 4;
 }
@@ -11,8 +11,9 @@ $mainSectionBackground: rgb(206, 200, 200);
 @media (min-width: 1281px) {
   .main-section {
     grid-column: 1/4;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
   }
 
 }

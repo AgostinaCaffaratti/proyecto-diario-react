@@ -3,10 +3,10 @@ import React from "react"
 import "./style.scss"
 
 const OpinionArticle = () => (
-  <article className="opinion-container__article">
-    <img className="opinion-container__author" src={process.env.PUBLIC_URL + "assets/user.png"} alt="author"></img>
-    <p className="opinion-container__name">Mariano Bergero</p>
-    <p className="opinion-container__content">Schiaretti reconfigura su “nueva normalidad”</p>
+  <article className="opinion-article">
+    <img className="opinion-article__author" src={process.env.PUBLIC_URL + "assets/user.png"} alt="author"></img>
+    <p className="opinion-article__name">Mariano Bergero</p>
+    <p className="opinion-article__content">Schiaretti reconfigura su “nueva normalidad”</p>
   </article>
 )
 

@@ -1,4 +1,27 @@
-.weather-container__icon {
-  width: 50px;
-  height: 50px;
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(190, 188, 190);
+
+  &__city {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__temp {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__icon {
+    i {
+      width: 100%;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
 }

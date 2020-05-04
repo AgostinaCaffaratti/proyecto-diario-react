@@ -5,18 +5,14 @@ $footerBaground: rgb(224, 209, 209);
   padding: 20px;
   border-radius: 2%;
   grid-column: 1/5;
-
   height: 50%;
   display: block;
 
+  &__copyright {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 
-
-
-}
-
-.footer-container__copyright {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+  }
 
 }
