@@ -2,25 +2,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(190, 188, 190);
+  padding: 10px;
+  background: #dbd3db;
+  border-radius: 2%;
+  height: 22%;
 
   &__city {
     margin-left: auto;
     margin-right: auto;
+    font-size: 40px;
   }
 
   &__temp {
     margin-left: auto;
     margin-right: auto;
+    font-size: 100px;
   }
 
   &__icon {
+
     i {
-      width: 100%;
+      font-size: 100px;
     }
 
     margin-left: auto;
     margin-right: auto;
+
+
 
   }
 

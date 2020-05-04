@@ -7,12 +7,7 @@ import "./style.scss"
 const MainSection = () => (
   <section className="main-section">
     <MainArticle />
-    <MainArticle />
-    <Articles />
-    <Articles />
-    <Articles />
-    <Articles />
-    <Articles />
+
     <Articles />
     <Articles />
     <Articles />
