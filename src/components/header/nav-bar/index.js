@@ -1,52 +1,29 @@
-import React from "react"
+import React, { useState } from "react"
 
 import "./style.scss"
 
-const NavBar = () => (
-  <nav className="nav-bar">
-    <ul className="nav-bar__list">
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Principales
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Imagenes
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Deporte
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Espectaculos
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Politica
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Clima
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Dolar
-        </a>
-      </li>
-      <li className="nav-bar__item">
-        <a className="nav-bar__item--link" href="https://www.google.com.ar/">
-          Opiniones
-        </a>
-      </li>
-    </ul>
-  </nav>
-)
+const NavBar = ({ data }) => {
+  console.log(data)
+  const [navOpen, setNavOpen] = useState(false)
+
+  return (
+    <nav className="nav-bar">
+      <div className="nav-bar__hamburguer" onClick={() => setNavOpen(!navOpen)}>
+        <i className="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div className={navOpen ? "active" : ""}>
+        <ul className="nav-bar-list">
+          {data.map((link) => (
+            <li className="nav-bar-list__item">
+              <a className="nav-bar-list__item--link" href={link.path}>
+                {link.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  )
+}
 
 export default NavBar

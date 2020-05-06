@@ -1,6 +1,6 @@
 import React from "react"
 
-import Article from "./article"
+import Article from "../../article"
 
 import "./style.scss"
 

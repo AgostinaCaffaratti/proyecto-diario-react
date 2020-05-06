@@ -4,18 +4,20 @@ import Articles from "./articles"
 
 import "./style.scss"
 
-const MainSection = () => (
-  <section className="main-section">
-    <MainArticle />
+const MainSection = () => {
+  return (
+    <section className="main-section">
+      <MainArticle />
 
-    <Articles />
-    <Articles />
-    <Articles />
-    <Articles />
-    <Articles />
-    <Articles />
-    <Articles />
-  </section>
-)
+      <Articles />
+      <Articles />
+      <Articles />
+      <Articles />
+      <Articles />
+      <Articles />
+      <Articles />
+    </section>
+  )
+}
 
 export default MainSection

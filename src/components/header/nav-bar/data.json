@@ -1,0 +1,21 @@
+ [{
+     "title": "Home",
+     "path": "/"
+   },
+   {
+     "title": "Galeria",
+     "path": "/galeria"
+   },
+   {
+     "title": "Deportes",
+     "path": "/deportes"
+   },
+   {
+     "title": "Politica",
+     "path": "/politica"
+   },
+   {
+     "title": "Espectaculos",
+     "path": "/espectaculos"
+   }
+ ]
