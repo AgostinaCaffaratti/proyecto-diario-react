@@ -1,23 +1,18 @@
 import React from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import "./style.scss"
 
-import Aside from "./components/aside"
-import MainSection from "./components/main-section"
+import Home from "./pages/home"
+import Deportes from "./pages/sports"
 
-import Galery from "./components/galery"
-import Topics from "./components/topics"
-import Layout from "./components/layout"
-
-const App = () => {
-  return (
-    <Layout className="grid-container">
-      <MainSection />
-      <Aside />
-      <Galery />
-      <Topics />
-    </Layout>
-  )
-}
+const App = () => (
+  <Router>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/deportes" component={Deportes} />
+    </Switch>
+  </Router>
+)
 
 export default App

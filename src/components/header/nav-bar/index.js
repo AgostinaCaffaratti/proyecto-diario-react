@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom"
 
 import "./style.scss"
 
@@ -15,9 +16,9 @@ const NavBar = ({ data }) => {
         <ul className="nav-bar-list">
           {data.map((link) => (
             <li className="nav-bar-list__item">
-              <a className="nav-bar-list__item--link" href={link.path}>
+              <Link className="nav-bar-list__item--link" to={link.path}>
                 {link.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
