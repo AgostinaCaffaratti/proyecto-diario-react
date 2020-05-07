@@ -3,7 +3,7 @@ import React from "react"
 import Brand from "./brand"
 import NavBar from "./nav-bar"
 
-import data from "./nav-bar/data.json"
+import data from "./../../database/navbar.json"
 
 import "./style.scss"
 

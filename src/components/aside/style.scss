@@ -13,6 +13,6 @@ $asideBackground: rgb(224, 222, 224);
 @media (min-width: 1281px) {
   .aside-container {
     grid-column: 4/5;
-
+    height: 100%
   }
 }

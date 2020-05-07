@@ -1,9 +1,10 @@
 .main-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: rgb(165, 163, 163);
-  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
   padding: 5px;
+  background: #444444;
+  border-radius: 2px;
+  height: auto;
 
   &__img {
     width: 100%
@@ -20,9 +21,7 @@
 
 @media (min-width: 1281px) {
   .main-article {
-    grid-template-rows: auto auto;
-    row-gap: 5px;
-    grid-template-columns: unset;
+    height: fit-content;
   }
 
 }

@@ -4,18 +4,14 @@ import Articles from "./articles"
 
 import "./style.scss"
 
+import data from "./../../database/data.json"
+
 const MainSection = () => {
   return (
     <section className="main-section">
-      <MainArticle />
+      <MainArticle data={data} />
 
-      <Articles />
-      <Articles />
-      <Articles />
-      <Articles />
-      <Articles />
-      <Articles />
-      <Articles />
+      <Articles data={data} />
     </section>
   )
 }

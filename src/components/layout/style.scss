@@ -2,10 +2,18 @@
   background: #ffffff;
   font-family: 'Roboto',
     sans-serif;
-  width: 100%;
+  width: auto;
   margin: 10px auto;
 
   display: grid;
   // gap: 1px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+// @media (min-width: 1281px) {
+
+//   .grid-container {}
+
+
+
+// }

@@ -1,15 +1,14 @@
 import React from "react"
 
-import Article from "../../components/article"
+import Articles from "../../components/main-section/articles"
+
+import data from "./../../database/data.json"
 
 import "./style.scss"
 
 const Topics = () => (
   <section className="themes-container">
-    <Article />
-    <Article />
-    <Article />
-    <Article />
+    <Articles data={data} />
   </section>
 )
 
