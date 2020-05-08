@@ -7,13 +7,15 @@ import Galery from "./../components/galery"
 import Topics from "./../components/topics"
 import Layout from "./../components/layout"
 
-const Home = () => (
-  <Layout className="grid-container">
-    <MainSection />
-    <Aside />
-    <Galery />
-    <Topics />
-  </Layout>
-)
+const Home = () => {
+  return (
+    <Layout className="grid-container">
+      <MainSection />
+      <Aside />
+      <Galery />
+      <Topics />
+    </Layout>
+  )
+}
 
 export default Home
