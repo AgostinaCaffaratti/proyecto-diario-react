@@ -3,12 +3,23 @@ $headerBackground: rgb(236, 236, 236);
 .header-container {
   background: $headerBackground;
   padding: 5px;
-  height: auto;
+  height: 95%;
   grid-column: 1/5;
   grid-row: auto;
   display: flex;
   flex-direction: row;
   align-content: center;
+
+
+}
+
+@media (min-width: 1281px) {
+
+  .header-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 
 
 }
