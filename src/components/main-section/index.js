@@ -4,7 +4,6 @@ import Articles from "./articles"
 
 import "./style.scss"
 
-import data from "./../../database/data.json"
 import dataNews from "./../../services/main-new"
 
 const MainSection = () => {
@@ -19,9 +18,9 @@ const MainSection = () => {
 
   return (
     <section className="main-section">
-      <MainArticle noticias={noticias} />
+      <MainArticle noticias={noticias[0]} />
 
-      <Articles data={data} />
+      <Articles articles={noticias} />
     </section>
   )
 }

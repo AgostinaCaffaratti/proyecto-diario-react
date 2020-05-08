@@ -1,6 +1,6 @@
 import mock from "./mock.json"
 
-const url = "https://newsapi.org/v2/top-headlines?country=ar&apiKey=d7a34d3963f049a69b48d599da2e6f9a&pageSize=1"
+const url = "https://newsapi.org/v2/top-headlines?country=ar&apiKey=d7a34d3963f049a69b48d599da2e6f9a&pageSize=24"
 
 const fetchNoticias = async () => {
   const data = await fetch(url)
