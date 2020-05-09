@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    border: 1px solid #444444;
+
+    &--input {
+      border: 1px solid #444444;
+    }
+  }
+
+}
