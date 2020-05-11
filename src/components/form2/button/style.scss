@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .55rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #FD6413;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #777;
+}

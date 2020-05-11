@@ -5,12 +5,11 @@ const url = "https://newsapi.org/v2/top-headlines?country=ar&apiKey=d7a34d3963f0
 const fetchNoticias = async () => {
   const data = await fetch(url)
   const articulos = await data.json()
-  console.log(articulos.articles)
+
   return articulos.articles
 }
 
 const dataNews = () => {
-  console.log(process.env.REACT_APP_MOCK)
   return process.env.REACT_APP_MOCK === "true" ? mock : fetchNoticias()
 }
 

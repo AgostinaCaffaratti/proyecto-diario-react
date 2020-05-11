@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import "./style.scss"
 
 const NavBar = ({ data }) => {
-  console.log(data)
   const [navOpen, setNavOpen] = useState(false)
 
   return (
@@ -15,8 +14,8 @@ const NavBar = ({ data }) => {
       <div className={navOpen ? "active" : ""}>
         <ul className="nav-bar-list">
           {data.map((link) => (
-            <li className="nav-bar-list__item">
-              <Link className="nav-bar-list__item--link" to={link.path}>
+            <li key={link.title} className="nav-bar-list__item">
+              <Link key={link.title} className="nav-bar-list__item--link" to={link.path}>
                 {link.title}
               </Link>
             </li>

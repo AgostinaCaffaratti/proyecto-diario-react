@@ -1,11 +1,12 @@
-$galeryBackground: rgb(179, 178, 178);
-
 .galery-container {
-  background: $galeryBackground;
-  padding: 20px;
 
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgb(219, 211, 219);
   grid-column: span 4;
   display: grid;
+  width: 82%;
 
   &__img {
     width: 100%;
@@ -18,7 +19,8 @@ $galeryBackground: rgb(179, 178, 178);
     display: grid;
     grid-template-columns: auto auto auto auto;
     max-height: fit-content;
-
-
+    width: 97%;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

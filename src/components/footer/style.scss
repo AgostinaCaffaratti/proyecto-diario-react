@@ -3,7 +3,7 @@ $footerBaground: rgb(224, 209, 209);
 .footer-container {
   background: $footerBaground;
   padding: 20px;
-
+  width: 97%;
   grid-column: 1/5;
   height: 50%;
   display: block;
