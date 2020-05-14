@@ -2,10 +2,10 @@ $footerBaground: rgb(224, 209, 209);
 
 .footer-container {
   background: $footerBaground;
-  padding: 20px;
-  width: 97%;
+  // padding: 20px;
+  width: 100%;
   grid-column: 1/5;
-  height: 50%;
+  height: 100%;
   display: block;
 
   &__copyright {

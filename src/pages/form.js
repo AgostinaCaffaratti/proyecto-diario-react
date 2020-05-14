@@ -1,25 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 
 import Layout from "./../components/layout"
-import Form from "./../components/form2"
-import Config from "./../components/form2/config"
+import RegisForm from "./../components/form"
 
-const Suscription = () => {
-  const [status, setStatus] = useState("")
-
-  const handleSubmit = (form) => {
-    setStatus("loading")
-
-    setTimeout(() => {
-      setStatus("success")
-    }, 3000)
-  }
-
-  return (
-    <Layout>
-      <Form form={Config} onSubmit={handleSubmit} status={status} />
-    </Layout>
-  )
-}
+const Suscription = () => (
+  <Layout>
+    <RegisForm />
+  </Layout>
+)
 
 export default Suscription

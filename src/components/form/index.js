@@ -1,55 +1,65 @@
 import React, { useState } from "react"
-
 import "./style.scss"
+import Input from "./input"
+import Select from "./select"
+import Button from "./button"
 
-const Form = () => {
+const RegisForm = () => {
+  const [nameEerrors, setNameErrors] = useState(false)
+  const [emailErrors, setEmailErrors] = useState(false)
+
   const [datos, setDatos] = useState({
-    nombre: "",
+    name: "",
     email: "",
-    telefono: "",
-    direccion: "",
+    seccion: "Politica",
   })
 
-  const handleInputChange = (event) => {
+  const handleChange = (e) => {
+    console.log(e.target.value)
+    setNameErrors(false)
+    setEmailErrors(false)
     setDatos({
       ...datos,
-      [event.target.name]: event.target.value,
+      [e.target.name]: e.target.value,
     })
   }
 
-  const enviarDatos = (event) => {
-    event.preventDefault()
-    console.log(datos.nombre + datos.email)
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    const [name, email] = e.target.elements
+    const nameValue = name.value
+    const emailValue = email.value
+
+    if (nameValue === "") {
+      setNameErrors(true)
+      return false
+    }
+    if (emailValue === "") {
+      setEmailErrors(true)
+      return false
+    }
+
+    console.log(datos)
   }
 
   return (
-    <div className="form">
-      <h1>Formulario de Inscripcion</h1>
-      <form className="form__container" onSubmit={enviarDatos}>
-        <div>
-          <label className="form__container--label">Nombre Completo</label>
-          <input placeholder="Ingrese Nombre Completo" className="form__container--input" type="text" name="nombre" onChange={handleInputChange}></input>
+    <div className="container">
+      <h1 className="container__title">Registrate!</h1>
+      <form noValidate className="container__form" onSubmit={handleSubmit}>
+        <div className="container__form__input">
+          <Input type="text" name="name" placeholder="Ingrese su nombre" autofocus onChange={handleChange} error={nameEerrors} message="debe ingresar su nombre" />
         </div>
-        <div>
-          <label className="form__container--label">Email</label>
-          <input placeholder="Ingrese Email" className="form__container--input" type="email" name="email" onChange={handleInputChange}></input>
+        <div className="container__form__input">
+          <Input type="text" name="email" placeholder="Ingrese su email" autofocus onChange={handleChange} error={emailErrors} message="debe ingresar su email" />
         </div>
-        <div>
-          <label className="form__container--label">Telefono</label>
-          <input placeholder="Ingrese Telefono" className="form__container--input" type="text" name="telefono" onChange={handleInputChange}></input>
+        <div className="container__form__select">
+          <Select type="select" name="seccion" label="selecciona tu seccion favorita" autofocus onChange={handleChange} />
         </div>
-        <div>
-          <label className="form__container--label">Direccion</label>
-          <input placeholder="Ingrese Direccion" className="form__container--input" type="text" name="direccion" onChange={handleInputChange}></input>
-        </div>
-        <div>
-          <button className="form__container--button" type="submit">
-            Enviar
-          </button>
-        </div>
+        <Button type="submit" />
       </form>
     </div>
   )
 }
 
-export default Form
+export default RegisForm
