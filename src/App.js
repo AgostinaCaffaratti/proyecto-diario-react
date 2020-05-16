@@ -1,5 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import {FormContextProvider} from './context/formContext'
 
 
 
@@ -9,7 +10,14 @@ import Home from "./pages/home"
 import Deportes from "./pages/sports"
 import Suscription from "./pages/form"
 
+
+
+
+
+
 const App = () => (
+  
+  <FormContextProvider>
   <Router>
     <Switch>
       <Route path="/" exact component={Home} />
@@ -17,6 +25,12 @@ const App = () => (
       <Route path="/suscribite" component={Suscription} />
     </Switch>
   </Router>
+  </FormContextProvider>
+  
+  
+  
 )
 
 export default App
+
+

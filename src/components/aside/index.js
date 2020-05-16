@@ -5,6 +5,7 @@ import Opinion from "./opinion"
 
 import dataClima from "./../../services/weather"
 
+
 import "./style.scss"
 
 const Aside = () => {
@@ -17,11 +18,12 @@ const Aside = () => {
     fetchClima()
   }, [])
 
+
   return (
     <aside className="aside-container">
       <Weather clima={clima} />
       <Dolar />
-      <Opinion />
+      <Opinion  />
     </aside>
   )
 }

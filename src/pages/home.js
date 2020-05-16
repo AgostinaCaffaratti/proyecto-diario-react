@@ -7,7 +7,10 @@ import Galery from "./../components/galery"
 
 import Layout from "./../components/layout"
 
+
+
 const Home = () => {
+ 
   return (
     <Layout className="grid-container">
       <MainSection />

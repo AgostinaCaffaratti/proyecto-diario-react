@@ -1,48 +1,16 @@
-import React, { useState } from "react"
+import React from "react"
 import "./style.scss"
 import Input from "./input"
 import Select from "./select"
 import Button from "./button"
 
+import useForm from './../../hooks/useForm'
+
 const RegisForm = () => {
-  const [nameEerrors, setNameErrors] = useState(false)
-  const [emailErrors, setEmailErrors] = useState(false)
+  const {datos, nameEerrors, emailErrors, handleChange, handleSubmit, message} = useForm()
 
-  const [datos, setDatos] = useState({
-    name: "",
-    email: "",
-    seccion: "Politica",
-  })
-
-  const handleChange = (e) => {
-    console.log(e.target.value)
-    setNameErrors(false)
-    setEmailErrors(false)
-    setDatos({
-      ...datos,
-      [e.target.name]: e.target.value,
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    const [name, email] = e.target.elements
-    const nameValue = name.value
-    const emailValue = email.value
-
-    if (nameValue === "") {
-      setNameErrors(true)
-      return false
-    }
-    if (emailValue === "") {
-      setEmailErrors(true)
-      return false
-    }
-
-    console.log(datos)
-  }
-
+  console.log({datos})
+ 
   return (
     <div className="container">
       <h1 className="container__title">Registrate!</h1>
@@ -56,7 +24,7 @@ const RegisForm = () => {
         <div className="container__form__select">
           <Select type="select" name="seccion" label="selecciona tu seccion favorita" autofocus onChange={handleChange} />
         </div>
-        <Button type="submit" />
+        <Button type="submit"  message={message} />
       </form>
     </div>
   )
